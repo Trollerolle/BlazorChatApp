@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace BlazorChatApp.Server.Controllers
+namespace BlazorChatApp.Server.api
 {
 
 	[ApiController]
