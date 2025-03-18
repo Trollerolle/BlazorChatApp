@@ -30,7 +30,10 @@ app.UseBlazorFrameworkFiles();
 app.UseStaticFiles();
 
 app.UseRouting();
-app.UseCors("AllowAll");
+app.UseCors(builder =>
+	builder.AllowAnyOrigin()
+		   .AllowAnyMethod()
+		   .AllowAnyHeader());
 
 app.MapRazorPages();
 app.MapControllers();
